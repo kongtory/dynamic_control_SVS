@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Samples</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7fa;
+            margin: 0;
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .audio-sample-list {
+            list-style: none;
+            padding: 0;
+        }
+        .audio-sample-item {
+            background: #fff;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: flex;
+            gap: 30px;
+        }
+        .audio-title {
+            flex: 0 0 200px;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 10px;
+            border-right: 2px solid #eee;
+        }
+        .model-container {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .model-item {
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+        }
+        .model-item h3 {
+            margin: 0 0 12px 0;
+            font-size: 0.95em;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .audio-sample-item {
+                flex-direction: column;
+            }
+            .audio-title {
+                border-right: none;
+                border-bottom: 2px solid #eee;
+            }
+            .model-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Samples</h1>
+    The following unseen samples illustrate that explicit energy input enables effective control over dynamics and volume in the synthesized singing voice.
+    
+    <ul class="audio-sample-list">
+        <li class="audio-sample-item">
+            <span class="audio-title">sample 1</span>
+            <div class="model-container">
+                <div class="model-item">
+                    <h3>ground-truth + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/ground_truth/alto_ver1/alto_ver1_sample3.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>baseline + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/baseline/alto_ver1/alto_ver1_sample3.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>phoneme-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/phoneme-level/alto_ver1/alto_ver1_sample3.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>frame-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/frame-level/alto_ver1/alto_ver1_sample3.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+        </li>
+
+        <li class="audio-sample-item">
+            <span class="audio-title">sample 2</span>
+            <div class="model-container">
+                                <div class="model-item">
+                    <h3>ground-truth + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/ground_truth/alto_ver2/alto_ver2_sample1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>baseline + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/baseline/alto_ver2/alto_ver2_sample1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>phoneme-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/phoneme-level/alto_ver2/alto_ver2_sample1.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>frame-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/frame-level/alto_ver2/alto_ver2_sample1.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+        </li>
+
+        <li class="audio-sample-item">
+            <span class="audio-title">sample 3</span>
+            <div class="model-container">
+                                <div class="model-item">
+                    <h3>ground-truth + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/ground_truth/alto_ver1/sample4.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>baseline + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/baseline/alto_ver1/sample4.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>phoneme-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/phoneme-level/alto_ver1/sample4.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>frame-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/frame-level/alto_ver1/sample4.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+        </li>
+
+        <li class="audio-sample-item">
+            <span class="audio-title">sample 4</span>
+            <div class="model-container">
+                                <div class="model-item">
+                    <h3>ground-truth + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/ground_truth/tenor_ver1/tenor_ver1_sample0.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>baseline + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/baseline/tenor_ver1/tenor_ver1_sample0.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>phoneme-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/phoneme-level/tenor_ver1/tenor_ver1_sample0.wav" type="audio/wav">
+                    </audio>
+                </div>
+                <div class="model-item">
+                    <h3>frame-level + HiFi-GAN</h3>
+                    <audio controls style="width: 100%">
+                        <source src="test_set/frame-level/tenor_ver1/tenor_ver1_sample0.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</body>
+</html>
+
+
